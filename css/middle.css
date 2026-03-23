@@ -443,7 +443,3 @@ main {
   margin: 0;
   display: block;
 }
-
-@media (max-width: 991px) {
-  .product-hero { height: 180px; }
-}
