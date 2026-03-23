@@ -1,0 +1,64 @@
+#view-toggle-btn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background: #324950;
+  color: #fff;
+  border: 2px solid rgba(255,255,255,0.15);
+  border-radius: 12px;
+  padding: 11px 15px 9px;
+  cursor: pointer;
+  font-family: 'Roboto Slab', Georgia, serif;
+  box-shadow: 0 4px 18px rgba(50,73,80,0.4);
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  user-select: none;
+  min-width: 64px;
+  outline: none;
+}
+
+#view-toggle-btn:hover {
+  background: #57984C;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(87,152,76,0.4);
+}
+
+#view-toggle-btn:active { transform: translateY(0); }
+
+#view-toggle-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  display: block;
+  margin: 0 auto;
+}
+
+#view-toggle-btn .btn-label {
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+#view-toggle-btn .btn-dots {
+  display: flex;
+  gap: 3px;
+  margin-top: 2px;
+}
+
+#view-toggle-btn .btn-dots span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.3);
+  transition: background 0.2s;
+}
+
+#view-toggle-btn .btn-dots span.active { background: #fff; }
