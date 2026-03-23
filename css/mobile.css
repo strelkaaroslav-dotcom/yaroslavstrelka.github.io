@@ -1,0 +1,240 @@
+#view-toggle-btn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background: #324950;
+  color: #fff;
+  border: 2px solid rgba(255,255,255,0.15);
+  border-radius: 12px;
+  padding: 11px 15px 9px;
+  cursor: pointer;
+  font-family: 'Roboto Slab', Georgia, serif;
+  box-shadow: 0 4px 18px rgba(50,73,80,0.4);
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  user-select: none;
+  min-width: 64px;
+  outline: none;
+}
+
+#view-toggle-btn:hover {
+  background: #57984C;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(87,152,76,0.4);
+}
+
+#view-toggle-btn:active { transform: translateY(0); }
+
+#view-toggle-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  display: block;
+  margin: 0 auto;
+}
+
+#view-toggle-btn .btn-label {
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+#view-toggle-btn .btn-dots {
+  display: flex;
+  gap: 3px;
+  margin-top: 2px;
+}
+
+#view-toggle-btn .btn-dots span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.3);
+  transition: background 0.2s;
+}
+
+#view-toggle-btn .btn-dots span.active { background: #fff; }
+
+body.mobile-view { overflow-x: hidden; }
+
+body.mobile-view .container {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  max-width: 100% !important;
+}
+
+body.mobile-view .site-header {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+body.mobile-view .site-header .top-row {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px 0 12px;
+}
+
+body.mobile-view .site-header .logo-img { height: 50px !important; }
+
+body.mobile-view .site-header .right-col {
+  width: 100%;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+body.mobile-view .site-header .search-form {
+  width: 100%;
+  max-width: 340px;
+}
+
+body.mobile-view .site-header .main-nav {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+body.mobile-view .site-header .main-nav a {
+  font-size: 11px !important;
+  padding: 4px 8px !important;
+}
+
+body.mobile-view .site-header .hero-content { padding: 32px 16px 36px; }
+
+body.mobile-view .site-header .hero-content h1 {
+  font-size: 1.45rem !important;
+  margin-bottom: 20px;
+}
+
+body.mobile-view .site-header .btn-readmore {
+  padding: 12px 28px;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+body.mobile-view .crop-strip { padding: 16px 0 12px; }
+
+body.mobile-view .crop-strip .crop-row {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+body.mobile-view .crop-strip .crop-item {
+  flex: 0 0 calc(25% - 8px);
+  min-width: 64px;
+  margin-bottom: 4px;
+}
+
+body.mobile-view .crop-strip .crop-icon img {
+  width: 32px;
+  height: 32px;
+}
+
+body.mobile-view .crop-strip .crop-label { font-size: 9px; }
+
+body.mobile-view .vm-section { padding: 36px 0 24px !important; }
+
+body.mobile-view .vm-section .blob-right,
+body.mobile-view .vm-section .blob-left,
+body.mobile-view .vm-section .blob-center { display: none !important; }
+
+body.mobile-view .vm-row {
+  flex-direction: column !important;
+  gap: 16px !important;
+  margin-bottom: 32px !important;
+}
+
+body.mobile-view .vm-row .vm-text,
+body.mobile-view .vm-row .vm-image {
+  flex: 0 0 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-top: 0 !important;
+}
+
+body.mobile-view .vm-row.vision-row .vm-text  { order: 1 !important; }
+body.mobile-view .vm-row.vision-row .vm-image { order: 2 !important; top: 0 !important; }
+body.mobile-view .vm-row.mission-row .vm-image { order: 1 !important; top: 0 !important; margin-bottom: 0 !important; }
+body.mobile-view .vm-row.mission-row .vm-text  { order: 2 !important; }
+
+body.mobile-view .vm-row .vm-image {
+  display: flex;
+  justify-content: center;
+}
+
+body.mobile-view .vm-row .vm-image img {
+  max-width: 100%;
+  max-height: 260px;
+  object-fit: cover;
+}
+
+body.mobile-view .vm-row .vm-text .vm-heading { font-size: 30px; margin-bottom: 10px; }
+body.mobile-view .vm-row .vm-text .vm-desc    { font-size: 15px; line-height: 1.65; }
+
+body.mobile-view .activities-section { padding: 30px 0 0; }
+
+body.mobile-view .activities-section .section-heading {
+  font-size: 30px !important;
+  margin-bottom: 24px;
+}
+
+body.mobile-view .activities-section .act-card { margin-bottom: 28px; }
+body.mobile-view .activities-section .act-img  { width: 200px; height: 160px; }
+body.mobile-view .activities-section .act-name { font-size: 17px; }
+body.mobile-view .activities-section .act-desc { font-size: 14px; }
+
+body.mobile-view .product-page-header .main-nav a {
+  font-size: 11px !important;
+  padding: 3px 6px !important;
+}
+
+body.mobile-view .product-logo { height: 46px !important; }
+body.mobile-view .product-hero { height: 180px !important; }
+
+body.mobile-view .product-main-title {
+  font-size: 22px !important;
+  margin-bottom: 24px !important;
+}
+
+body.mobile-view .product-text-block p { font-size: 13px; }
+
+body.mobile-view .breeding-programs {
+  margin: 16px 0 24px !important;
+  padding: 20px 14px !important;
+}
+
+body.mobile-view .bp-card { padding-right: 0 !important; margin-bottom: 22px; }
+body.mobile-view .col-md-4:last-child .bp-card { margin-bottom: 0; }
+body.mobile-view .bp-title { font-size: 17px; }
+body.mobile-view .bp-desc  { font-size: 12px; }
+
+body.mobile-view .product-item { margin-bottom: 20px; }
+
+body.mobile-view .product-item-img {
+  height: 165px !important;
+  transform: scale(1) !important;
+  width: 100% !important;
+}
+
+body.mobile-view .product-item-img-wrap,
+body.mobile-view .product-item-info { width: 100% !important; }
+
+body.mobile-view .product-item-code { font-size: 15px; }
+body.mobile-view .product-item-name { font-size: 12px; }
+
+body.mobile-view .site-footer .footer-main {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+body.mobile-view .site-footer .footer-nav { flex-wrap: wrap; gap: 2px; }
+body.mobile-view .site-footer .footer-nav a { font-size: 9px; padding: 3px 8px; }
