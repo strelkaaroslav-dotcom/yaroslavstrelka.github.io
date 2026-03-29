@@ -16,7 +16,7 @@
 
   const t = tomatoes[current];
 
-  
+
   const titleCode = document.querySelector('.pd-title-code');
   const titleName = document.querySelector('.pd-title-name');
   const photo = document.querySelector('.pd-photo');
@@ -25,11 +25,11 @@
   if (titleName) titleName.innerHTML = t.name.replace(' ', '<br>');
   if (photo) { photo.src = t.img; photo.alt = t.code; }
 
-  
+
   const counter = document.getElementById('pd-counter');
   if (counter) counter.textContent = (current + 1) + ' / ' + tomatoes.length;
 
-  
+
   const prevBtn = document.getElementById('pd-prev');
   const nextBtn = document.getElementById('pd-next');
 
