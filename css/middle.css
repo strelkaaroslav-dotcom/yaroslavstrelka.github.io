@@ -446,7 +446,6 @@ main {
 }
 
 @media (max-width: 991px) {
-  .product-hero { height: 180px; }
 }
 
 .pd-main {
@@ -598,7 +597,7 @@ main {
 }
 
 .pd-char-row .col-6:last-child .pd-char-block {
-  padding-left: 190px;
+  padding-left: 20px;
 }
 
 .pd-char-title {
@@ -614,7 +613,7 @@ main {
   border: none;
   border-top: 1.5px solid #57984c;
   margin: 8px 0 12px;
-  width: 155px;
+  width: 120px;
   display: block;
   opacity: 1;
 }
@@ -635,8 +634,8 @@ main {
 }
 
 .pd-char-list li::marker {
-  color: #57984C; 
-  font-size: 15px; 
+  color: #57984C;
+  font-size: 15px;
 }
 
 .pd-char-color-val {
