@@ -75,15 +75,15 @@
   font-family: 'Roboto Slab', Georgia, serif;
   font-size: 13px;
   font-weight: 600;
-  color: #324950;
-  text-decoration: none;
+  color: #324950 !important;
+  text-decoration: none !important;
   padding: 4px 12px;
   white-space: nowrap;
   transition: color 0.15s;
 }
 
 .site-header .main-nav a:hover,
-.site-header .main-nav a.active { color: #324950; }
+.site-header .main-nav a.active { color: #324950 !important; }
 
 .site-header .hero-content {
   flex: 1;
@@ -120,3 +120,25 @@
 }
 
 .site-header .btn-readmore:hover { background: #2e6b3e; color: #fff; }
+
+.site-header a,
+.site-header a:link,
+.site-header a:visited,
+.site-header a:hover,
+.site-header a:active {
+  text-decoration: none !important;
+  -webkit-text-decoration: none !important;
+}
+
+.site-header .main-nav a,
+.site-header .main-nav a:link,
+.site-header .main-nav a:visited {
+  color: #324950 !important;
+  text-decoration: none !important;
+}
+
+.site-header .main-nav a:hover,
+.site-header .main-nav a.active {
+  color: #324950 !important;
+  text-decoration: none !important;
+}
