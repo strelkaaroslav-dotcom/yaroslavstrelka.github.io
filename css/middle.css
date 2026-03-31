@@ -630,7 +630,7 @@ main {
   color: #333;
   margin-bottom: 6px;
   line-height: 1.55;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .pd-char-list li::marker {
